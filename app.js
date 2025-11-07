@@ -42,3 +42,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+app.post('/contact', (req, res) => {
+  res.render('thankyou', { name: 'Emmanuel Uzoma Akonye' });
+});
