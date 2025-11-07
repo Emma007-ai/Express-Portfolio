@@ -1,0 +1,6 @@
+/* About: roomy on desktop */
+.about-photo { width: 34%; }
+.about-text  { width: 64%; }
+
+/* Three columns on wide screens */
+.projects .card { width: 31%; margin: 1%; }

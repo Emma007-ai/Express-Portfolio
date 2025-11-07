@@ -1,0 +1,158 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* === Header === */
+header {
+  background: linear-gradient(135deg, #F48DED, #5C30FF); /* gradient from your palette */
+  color: white;
+  padding: 15px;
+  header {
+    min-height: 100px;
+  }
+
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* === Main Section === */
+main {
+  padding: 20px;
+}
+
+/* === Footer === */
+footer {
+  background: #B77DED; /* soft purple tone from palette */
+  color: #eee;
+  text-align: center;
+  padding: 15px;
+}
+
+
+/* DEBUG */
+body{background:#fee !important;}
+header{background:linear-gradient(135deg,#F48DED,#5C30FF)!important;min-height:120px;}
+/* DEBUG */
+body { outline: 5px solid red !important; }
+
+/* === About layout (no flexbox) === */
+.about {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: #ffecec;              /* soft backdrop */
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+.about-photo,
+.about-text { 
+  display: inline-block; 
+  vertical-align: top; 
+}
+.about-photo { width: 36%; }
+.about-text  { width: 62%; }
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.about-text h2 { margin-top: 0; }
+.facts { padding-left: 18px; margin: 10px 0 16px; }
+.facts li { margin: 4px 0; }
+
+/* === Projects grid (no flexbox) === */
+.projects { max-width: 1100px; margin: 16px auto; }
+.projects .card {
+  display: inline-block;            /* side-by-side without flexbox */
+  vertical-align: top;
+  width: 48%;
+  margin: 1%;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+.projects .card h3 { margin-top: 0; }
+.projects .teaser { color: #555; }
+
+/* Details “button” */
+.reveal summary {
+  list-style: none;                 /* remove default marker */
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #2a9d8f;
+  color: #2a9d8f;
+  background: #f4fffc;
+  user-select: none;
+}
+.reveal[open] summary {
+  background: #2a9d8f;
+  color: #fff;
+}
+.reveal p { margin: 12px 0 0; }
+ 
+/* Contact card */
+form {
+  max-width: 600px;
+  margin: 24px auto;
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 2px 6px rgba(0,0,0,.12);
+}
+fieldset{ border:0; padding:0; margin:0; }
+legend{ font-weight:bold; margin-bottom:8px; }
+
+label{ display:block; margin:12px 0 6px; }
+input, textarea, button{
+  width:100%;
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:15px;
+}
+input:focus, textarea:focus{
+  outline:none;
+  border-color:#2a9d8f;
+  box-shadow:0 0 4px rgba(42,157,143,.4);
+}
+button{
+  margin-top:14px;
+  background:#2a9d8f;
+  color:#fff; border:none; font-weight:bold; cursor:pointer;
+}
+button:hover{ background:#21867a; }

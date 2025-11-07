@@ -1,0 +1,74 @@
+/* ===== Ocean Blue Theme ===== */
+:root {
+  --primary-color: #1da1f2;     /* Ocean blue */
+  --secondary-color: #107dac;   /* Deeper sea blue */
+  --background-color: #e6f7ff;  /* Very light aqua background */
+  --text-color: #0a1f33;        /* Deep navy for contrast */
+  --accent-color: #4dd0e1;      /* Aqua accent */
+}
+
+/* ===== Global ===== */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+.navbar a.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+.navbar a.nav-link:hover, 
+.navbar a.nav-link.active {
+  color: var(--accent-color) !important;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  transition: background-color 0.3s;
+}
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+/* ===== Cards ===== */
+.card {
+  border: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: white;
+}
+.card-title {
+  color: var(--secondary-color);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 0.95rem;
+}
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fff;
+}

@@ -1,0 +1,7 @@
+/* About: stack columns on mobile */
+.about-photo, .about-text { display: block; width: 100%; }
+.about-photo { margin-bottom: 12px; }
+.about { padding: 12px; }
+
+/* One column on phones */
+.projects .card { width: 100%; margin: 0 0 12px 0; }

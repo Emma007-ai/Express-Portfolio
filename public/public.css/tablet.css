@@ -1,0 +1,6 @@
+/* About: two columns on tablet */
+.about-photo { width: 40%; }
+.about-text  { width: 58%; }
+
+/* Two columns on tablets */
+.projects .card { width: 48%; margin: 1%; }
